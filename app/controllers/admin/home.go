@@ -40,7 +40,7 @@ func (this *HomeController) Index() {
 	this.Data["Cpus"] = runtime.NumCPU()
 	this.Data["Port"] = beego.AppConfig.String("httpport")
 	this.Data["AppName"] = beego.AppConfig.String("appname")
-	this.Data["NowTime"] = time.Now().Format("2006-05-04 15:02:01")
+	this.Data["NowTime"] = time.Now().Format("2006-01-02 15:04:05")
 	this.Data["SessionID"] = this.Ctx.Input.CruSession.SessionID()
 
 	// 登录信息
