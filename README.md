@@ -54,6 +54,9 @@ cp ./conf/data.conf.example ./conf/data.conf
 4. 运行访问
 ```
 ./novel
+## linux
+go build
+nohup ./novel &
 ```
 然后在浏览器中输入localhost:8089 访问首页 进入localhost:8089/admin进入后台，初始用户名/密码：admin/admin123
 
